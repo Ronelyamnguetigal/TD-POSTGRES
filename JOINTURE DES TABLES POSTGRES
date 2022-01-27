@@ -1,0 +1,46 @@
+SELECT vaccin.nom_vaccin,nouveau_nee.nom_bebe,hopital.nom_hopital ,parent.id_parent FROM vaccin 
+INNER JOIN nouveau_nee on vaccin.id_vaccin=nouveau_nee.id_nouveau_nee
+INNER JOIN hopital on vaccin.id_vaccin =hopital.id_hopital
+INNER JOIN parent on vaccin.id_vaccin =parent.id_parent;
+
+
+nom_vaccin   |  nom_bebe   |  nom_hopital  | id_parent 
+----------------+-------------+---------------+-----------
+ Elise          | Eadith      | Angeli        |         1
+ Goober         | Amye        | Maia          |         2
+ Concordia      | Bengt       | Tuesday       |         3
+ Hugibert       | Ardelle     | Lilas         |         4
+ Feliks         | Ericha      | Lance         |         5
+ Marley         | Ben         | Gilbertine    |         6
+ Wood           | Olga        | Vonny         |         7
+ Garreth        | Wash        | Jillene       |         8
+ Gianni         | Gerri       | Rafael        |         9
+ Phil           | Aurelie     | Trueman       |        10
+ Leyla          | Lucien      | Kimball       |        11
+ Delmer         | Christoper  | Lisa          |        12
+ Kaela          | Waylon      | Auberon       |        13
+ Corrine        | Jamie       | Myra          |        14
+ Franciskus     | Lalo        | James         |        15
+ Elaine         | Aleta       | Dorian        |        16
+ Chastity       | Myra        | Starla        |        17
+ Patrizia       | Eran        | Sorcha        |        18
+ Dame           | Adrian      | Sabra         |        19
+ Ardyth         | Trefor      | Mareah        |        20
+ Ware           | Goldi       | Terencio      |        21
+ Erin           | Wenda       | Dredi         |        22
+ Katherine      | Fowler      | Huntington    |        23
+ Fania          | Barney      | Raffaello     |        24
+ Orran          | Torrie      | Nolan         |        25
+ Jere           | Devin       | Renell        |        26
+ Kaila          | Salim       | Batholomew    |        27
+ Pooh           | Vick        | Deidre        |        28
+ Mab            | Zachariah   | Margie        |        29
+ Alaine         | Karoline    | Had           |        30
+ Agnella        | Georgeanna  | Morie         |        31
+ Martie         | Joy         | Hamilton      |        32
+ Ezechiel       | Grayce      | Blair         |        33
+ Frederico      | Grantley    | Nonah         |        34
+ Martica        | Aubrey      | Jolyn         |        35
+:
+
+
